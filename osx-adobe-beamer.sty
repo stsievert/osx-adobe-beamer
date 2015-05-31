@@ -1,0 +1,20 @@
+\DeclareOption{notes}{
+    \setbeameroption{show only notes}
+}
+\DeclareOption{slides}{
+    \setbeameroption{hide notes}
+}
+
+\ProcessOptions\relax
+
+% taken from [2] to create a notes.pdf and slides.pdf file
+% that is, so \note{} is executed on *every* slide
+%
+% [2]:http://tex.stackexchange.com/a/11724/20901
+\makeatletter
+\def\beamer@framenotesbegin{% at beginning of slide
+  \gdef\beamer@noteitems{}%
+  \gdef\beamer@notes{{}}% used to be totally empty.
+}
+\makeatother
+

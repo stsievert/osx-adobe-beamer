@@ -1,0 +1,71 @@
+\documentclass{beamer}
+\usepackage{amsthm}
+\usepackage{animate}
+\usepackage{multimedia}
+
+
+\title{A presentation}
+\author{Scott Sievert}
+\institute{UW-Madison}
+\date{May 31, 2015}
+
+% Themes
+\usetheme{Boadilla}
+\usecolortheme{sidebartab}
+\usefonttheme{structurebold} 
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+\setbeameroption{show notes}
+\setbeamertemplate{navigation symbols}{}
+\usepackage{libertine}
+
+% custom package found in this repo
+\usepackage[notes]{osx-adobe-beamer}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+    \frametitle{First slide}
+    \begin{itemize}
+        \item Bullets propery
+        \item Quotes proper
+        \item Thm boxes proper
+        \item Animations
+        \item Comments
+        \item Notes
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Notes}
+    \note{Talk about so and so}
+    Here we examine so-and-so
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quote}
+    \begin{quotation}
+        This is the best time!
+    \end{quotation}
+    I'm okay leaving this as is -- seems like a small deal.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Nice lists}
+    \begin{description}
+        \item[API] Accelerate
+        \item[Skis] Blizzard
+    \end{description}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Overlay}
+    Professor: You get an F; no pause!
+
+    \pause
+
+    Student: Huh? I just used it
+\end{frame}
+
+\end{document}
