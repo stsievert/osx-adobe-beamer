@@ -26,7 +26,9 @@ It does this by creating two PDFs and mapping your keypresses (arrows/etc) to
 *both* open Acrobat windows.
 
 This is not a big application; it only maps your keystrokes to both of Adobe
-Readers windows. If it fails during a presentation, you can still survive!
+Readers windows. If it fails during a presentation, you can still survive! You
+can still operate Adobe as normal and still have a presentation, but then the
+notes will be out of sync.
 
 ## Latex compiling directions
 I have provided a package so your presentation and notes have the same number
@@ -47,3 +49,14 @@ of slides.
 3. Make the window that opens up active/in front.
 4. Certain keys are now mapped to Adobe Reader! (arrows/space/return)
 
+## Similar software
+* [PDFslide](http://sourceforge.net/projects/pdfslide/)
+* [PDF Presenter](http://pdfpresenter.sourceforge.net/)
+* [Présentation.app](http://iihm.imag.fr/blanch/software/osx-presentation/)
+* [Skim](http://tex.stackexchange.com/a/21857/29873)
+* [SplitShow](http://code.google.com/p/splitshow/)
+* [PDF to Keynote](http://www.cs.hmc.edu/~oneill/freesoftware/pdftokeynote.html)
+* [pympress](http://pympress.org/)
+
+I didn't find any of these that could easily be installed on OSX, supported
+video/animation playback *and* gave a "presenter" view.

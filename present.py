@@ -5,12 +5,12 @@ from applescript import AppleScript
 def nextSlide(keycode):
     scpt = """
     on send_key()
-            delay 0.2
+            delay 0.3
             tell application "System Events" to key code {0}
     end send_key
 
     on switch_windows()
-            delay 0.2
+            delay 0.3
             tell application "System Events" to key code 50 using """.format(keycode)\
             +r'{command down}'+"""
     end switch_windows
