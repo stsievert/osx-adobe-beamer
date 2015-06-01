@@ -6,23 +6,27 @@ Beamer has nice features:
 * notes
 * (also, it's a *great* presentation tool)
 
-but I haven't found a good viewer that supports both these options. Adobe
-Reader supports videos and there are many options to support notes.
+Adobe has some great features to display a PDF:
 
-I wrapped Adobe Reader so it could show the notes on a separate screen: see the
-screenshot below!
+* transitions
+* video/animation
+* hyperlinks
+
+but I couldn't find a way to include presenter notes when displaying a PDF full
+screen (i.e., Beamer presentation). I couldn't find any other software that
+included all the niceties of Adobe *and* had note support so I created a
+wrapper for Adobe.
+
+This wrapper allows presentations in Adobe but also allows you to view the
+notes you write with `\note{}`.
 
 ![](speaker_view.jpg)
 
+It does this by creating two PDFs and mapping your keypresses (arrows/etc) to
+*both* open Acrobat windows.
+
 This is not a big application; it only maps your keystrokes to both of Adobe
 Readers windows. If it fails during a presentation, you can still survive!
-
-## Presentation directions
-0. Download this repo.
-1. Open up `notes.pdf` and `presentation.pdf` in Adobe Reader.
-2. Run the command `python /path/to/present.py` in your terminal
-3. Make the window that opens up active/in front.
-4. Certain keys are now mapped to Adobe Reader! (arrows/space/return)
 
 ## Latex compiling directions
 I have provided a package so your presentation and notes have the same number
@@ -35,4 +39,11 @@ of slides.
 (I'm fairly certain this file must be included after beamer options (I did it
    before `\begin{document}` and was fine)
 3. Copy the PDFs so you can open them both at once.
+
+## Presentation directions
+0. Download this repo.
+1. Open up `notes.pdf` and `presentation.pdf` in Adobe Reader.
+2. Run the command `python /path/to/present.py` in your terminal
+3. Make the window that opens up active/in front.
+4. Certain keys are now mapped to Adobe Reader! (arrows/space/return)
 
