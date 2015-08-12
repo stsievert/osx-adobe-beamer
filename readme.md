@@ -37,7 +37,7 @@ of slides.
 0. Download this repo and copy `osx-adobe-beamer.sty` into the folder your
    presentation is in.
 1. Include the line `\usepackage{osx-adobe-beamer}` before `\begin{document}`.
-2. Compile your docuement with `\usepackage[notes]{osx-adobe-beamer}` and `\usepackage[slides]{osx-adobe-beamer}`. 
+2. Compile your docuement with `\usepackage[notes]{osx-adobe-beamer}` and `\usepackage[slides]{osx-adobe-beamer}`.
 (I'm fairly certain this file must be included after beamer options (I did it
    before `\begin{document}` and was fine)
 3. Copy the PDFs so you can open them both at once.
@@ -49,14 +49,21 @@ of slides.
 3. Make the window that opens up active/in front.
 4. Certain keys are now mapped to Adobe Reader! (arrows/space/return)
 
+## Requirements
+* A LaTeX install, probably MacTex
+* the `applescript` package, installable with `pip install py-applescript`
+* an OSX machine (because this package runs an Applescript to map your
+  keypresses)
+
 ## Similar software
 * [PDFslide](http://sourceforge.net/projects/pdfslide/)
 * [PDF Presenter](http://pdfpresenter.sourceforge.net/)
 * [Présentation.app](http://iihm.imag.fr/blanch/software/osx-presentation/)
 * [Skim](http://tex.stackexchange.com/a/21857/29873)
-* [SplitShow](http://code.google.com/p/splitshow/)
+* [SplitShow](https://github.com/mpflanzer/splitshow)
 * [PDF to Keynote](http://www.cs.hmc.edu/~oneill/freesoftware/pdftokeynote.html)
 * [pympress](http://pympress.org/)
+* [pdf-presenter](https://github.com/thefranke/pdf-presenter)
 
 I didn't find any of these that could easily be installed on OSX, supported
 video/animation playback *and* gave a "presenter" view.
